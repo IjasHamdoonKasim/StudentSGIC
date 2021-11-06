@@ -13,7 +13,7 @@ public class StudentController {
 
     @Autowired
     private StudentRepository studentRepository;
-//////////////////////////////////////////////
+    
     @PostMapping("/addStudent")
     public Student addStudent(@RequestBody Student student){
         return studentRepository.save(student);
